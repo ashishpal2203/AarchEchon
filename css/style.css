@@ -1,0 +1,967 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Gilda+Display&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+p,li{
+    text-align: justify;
+}
+.onlyTabOrPhone{
+    display: none;
+}
+
+.dropdown-toggle1 {
+    display: block;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: 400;
+    color: var(--bs-dropdown-link-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-radius: var(--bs-dropdown-item-border-radius, 0);
+}
+
+h1,
+h2{
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-family: Crimson Pro;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, #314944 0.02%, #64958C 98.91%);
+    box-shadow: 0px 13px 12px 0px rgba(165, 165, 165, 0.25);
+    z-index: 5;
+}
+
+header .nav-link {
+    color: #fff;
+}
+header .exp_now_btnphone:hover::before{
+    width: 0px!important;
+}
+
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #fff;
+}
+
+.navbar-nav li:hover .main-sub {
+    display: block;
+}
+
+.nav-item .nav-link.active {
+    color: #fff !important;
+}
+
+.nav-item .nav-link {
+    position: relative;
+}
+
+header .nav-link:before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #E9D996;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all ease .5s;
+}
+
+header .nav-link:hover {
+    color: #fff;
+}
+header .exp_now_btnphone:hover{
+    color: #2A4234;
+}
+
+header .nav-link:hover::before {
+    width: 100%;
+}
+
+.h-logo {
+    width: 20%;
+}
+
+.heading_color {
+    color: #2A4234;
+}
+
+.mid_text {
+    color: #2B2B2B;
+    font-family: Gilda Display;
+}
+
+.web-menu {
+    width: 80%;
+}
+
+.web-menu ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    font-family: 'Crimson Pro', serif;
+}
+
+.web-menu ul li a {
+    text-decoration: none;
+    font-family: 'Crimson Pro', serif;
+    color: #000;
+}
+
+.exp_now_btn {
+    text-decoration: none;
+    background: #ffffff;
+    color: #425F59;
+    padding: 7px 22px !important;
+    border-radius: 30px;
+}
+
+.exp_now_btn.exp_now_btnphone {
+    color: #425F59;
+}
+
+#hero {
+    min-height: 90vh;
+}
+
+#hero .hero_text {
+    color: #fff;
+    line-height: 65px;
+}
+
+#ExploreWithUs {
+    padding: 3rem 0;
+}
+
+#ExploreWithUs .explore_with_us {
+    width: fit-content;
+    position: relative;
+    color: #2A4234;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* #ExploreWithUs .explore_with_us::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #46492F;
+    bottom: 0;
+    left: 0;
+} */
+
+.ExploreWithUsCardGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 10px;
+}
+
+.ExploreWithUsCardGrid .ExploreWithUsCard {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ExploreWithUsCardGrid .ExploreWithUsCard .innerText {
+    background: rgba(0, 0, 0, 0.58);
+    color: #fff;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    height: 57px;
+}
+
+
+#StudentZone {
+    background-color: #C4D8BB;
+    padding: 3rem 0;
+}
+
+#StudentZone .studentZone_heading {
+    color: #2A4234;
+}
+
+#StudentZone ul {
+    list-style: none;
+}
+
+#StudentZone ul li {
+    background-size: 36px 30px;
+    background-repeat: no-repeat;
+    padding-left: 43px;
+    margin-bottom: 25px;
+    color: #363434;
+    font-size: 23px;
+    font-weight: 600;
+    background-position-y: 3px;
+}
+
+#StudentZone ul li.flower {
+    background-image: url(../icons/flower_icon.png);
+}
+
+#StudentZone ul li.questionsMark {
+    background-image: url(../icons/question_mark_icon.png);
+}
+
+#StudentZone ul p {
+    padding-left: 44px;
+    color: #363434;
+}
+
+#ExploreMore {
+    padding: 3rem 0;
+}
+
+
+
+
+
+
+#service_sec1 {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../image/service1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: .6rem;
+}
+
+.article_rightImg {
+    float: right;
+    width: 400px;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.article_rightImg2 {
+    float: left;
+    width: 400px;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.servicefirst {
+    background: rgba(255, 255, 255, 0.74);
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+
+#service_sec1 .servicefirst p {
+    text-align: justify;
+    color: #383737;
+}
+
+.servicefirst p {
+    line-height: 30px;
+}
+
+.servicefirst li {
+    line-height: 30px;
+}
+
+.servicefirst li span {
+    font-weight: 600;
+}
+
+#service_sec2 {
+    padding-top: .6rem;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../image/services2.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#service_sec2 .servicefirst {
+    padding-top: 1rem;
+}
+
+#service_sec3 {
+    padding-top: .6rem;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../image/services3.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#greatOnes .greatOneImg {
+    width: 250px;
+}
+
+#stress_management1 {
+    background-image: url(../image/stress-management1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: .6rem;
+}
+
+#stress_management1 p,
+#stress_management1 li,
+#stress_management2 p,
+#stress_management2 li,
+#stress_management3 p,
+#stress_management3 li,
+#stress_management4 p,
+#stress_management4 li,
+#stress_management5 p,
+#stress_management5 li,
+#Grief_Management p,
+#Grief_Management li,
+#Breakup_Management p,
+#Breakup_Management li {
+    font-family: Open Sans;
+    line-height: 40px;
+}
+
+.white_bg {
+    background: rgba(255, 255, 255, 0.66);
+    padding: 1rem;
+
+}
+
+.first_subheading {
+    color: #126ba6;
+    font-family: Crimson Pro;
+    padding-left: 15px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#stress_management2 {
+    padding-top: .6rem;
+    background-image: url(../image/stress-management2.png);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#stress_management3 {
+    background-image: url(../image/stress-management3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: .6rem;
+}
+
+#stress_management4 {
+    padding-top: .6rem;
+    background-image: url(../image/stress-management4.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#stress_management5 {
+    background-image: url(../image/stress-management5.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Therapy1 {
+    background-image: url(../image/Therapy1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: .6rem;
+}
+
+#Therapy1 p,
+#Therapy1 li,
+#Therapy2 p,
+#Therapy2 li,
+#Therapy3 p,
+#Therapy3 li {
+    line-height: 30px;
+    font-family: Open Sans;
+}
+
+#Therapy2 {
+    padding-top: .6rem;
+    background-image: url(../image/Therapy2.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Therapy3 {
+    padding-top: .6rem;
+    background-image: url(../image/Therapy3.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#Other_Services1 {
+    background-image: url(../image/other_services1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: .6rem;
+}
+
+#Other_Services1 p,
+#Other_Services1 li,
+#Other_Services2 p,
+#Other_Services2 li,
+#Other_Services3 p,
+#Other_Services3 li {
+    line-height: 30px;
+    font-family: Open Sans;
+}
+
+#Other_Services2 {
+    background-image: url(../image/other_services2.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: .6rem;
+
+}
+
+#Other_Services2 ul {
+    list-style: none;
+}
+
+#Other_Services2 ul .text_hilight {
+    font-weight: 600;
+    display: block;
+    margin-top: 1rem;
+}
+
+#Other_Services2 ul li {
+    background-size: 55px 55px;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+    background-position-y: 19px;
+    padding-top: 1rem;
+}
+
+#Other_Services2 ul li:nth-of-type(1) {
+    background-image: url(../icons/ph_flower-lotus-thin1.png);
+}
+
+#Other_Services2 ul li:nth-of-type(2) {
+    background-image: url(../icons/ph_flower-lotus-thin2.png);
+}
+
+#Other_Services2 ul li:nth-of-type(3) {
+    background-image: url(../icons/ph_flower-lotus-thin3.png);
+}
+
+#Other_Services2 ul li:nth-of-type(4) {
+    background-image: url(../icons/ph_flower-lotus-thin4.png);
+}
+
+#Other_Services2 ul li:nth-of-type(5) {
+    background-image: url(../icons/ph_flower-lotus-thin5.png);
+}
+
+
+.fiveElement {
+    position: relative;
+}
+
+.fiveElement::before {
+    position: absolute;
+    content: "";
+    background-image: url(../image/FiveElements1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 314px;
+    height: 627px;
+    top: 10%;
+    right: 0;
+}
+
+#Other_Services3 {
+    background-image: url(../image/other_services3.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Grief_Management {
+    background-image: url(../image/gift_manegment.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Breakup_Management {
+    background-image: url(../image/breakup_management.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: .6rem;
+}
+
+
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+
+
+
+
+#Animal_Connect1 {
+    padding-top: 2rem;
+}
+
+#Animal_Connect1 .horse_card {
+    background-color: #A7AAC0;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.animal_heading {
+    width: 80%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+.animal_heading h4{
+    font-family: 'Merriweather', serif;
+}
+
+
+.Animal_card {
+    padding: 2rem;
+    border-radius: 15px;
+
+}
+
+.tiger_card {
+    background-color: #8FC6A8;
+}
+
+.elephant_card {
+    background-color: #B6D4E9;
+}
+
+.beer_card {
+    background-color: #E29970;
+}
+
+.Apes_card {
+    background-color: #F6B1B1;
+}
+
+.Wolves_card {
+    background-color: #BBBFDA;
+}
+
+.Hippopotamus_card {
+    background-color: #8FC6A8;
+}
+
+.Deers_card {
+    background-color: #F6B1B1;
+}
+
+.Rabbits_card {
+    background-color: #CBE0EF;
+}
+
+.Squirrels_card {
+    background-color: #A7AAC0;
+}
+
+.Dogs_card {
+    background-color: #FFC585;
+}
+
+.Cats_card {
+    background-color: #8FC6A8;
+}
+
+.Pythons_card {
+    background-color: #F6B1B1;
+}
+
+.Frogs_card {
+    background-color: #FEB38B;
+}
+
+.Mouse_card {
+    background-color: #F6B1B1;
+}
+
+.Ants_card {
+    background-color: #A7AAC0;
+}
+
+.Spiders_card {
+    background-color: #8FC6A8;
+}
+
+
+
+
+
+.Eagles_card {
+    background-color: #F2D299;
+}
+
+.Owls_card {
+    background-color: #8FC6A8;
+}
+
+.Swans_card {
+    background-color: #F6B1B1;
+}
+
+.Parrots_card {
+    background-color: #B6D4E9;
+}
+
+.Hummingbird_card {
+    background-color: #A7AAC0;
+}
+
+.Peacock_card {
+    background-color: #FFC585;
+}
+
+.Crow_card {
+    background-color: #8FC6A8;
+}
+
+#student_zone1 {
+    background-image: url(../image/student_zone.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#student_zone2 {
+    /* background: hsl(232.94deg, 46.79%, 21.37%) url(../image/animation.gif) center/contain; */
+    background-color: #1d2350;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 3rem 0;
+    font-family: Gilda Display;
+}
+
+footer .footer_start ul {
+    list-style: none;
+    line-height: 40px;
+}
+
+
+
+
+.ujjwaltab {
+    /* border: 1px solid rgb(225 212 94); */
+    background-color: #d9c9f16b;
+}
+
+.ujjwaltab .nav-link {
+    border-radius: 0;
+    color: #000;
+}
+
+
+.ujjwaltab .nav-link {
+    border-radius: 2px;
+    border: 1px solid #DEDEDE;
+    color: #324A45;
+}
+
+.ujjwaltab .nav-link.active {
+    background-color: transparent;
+    border: 1px solid #334B46;
+    color: #324A45 !important;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.ujjwaltab {
+    flex-wrap: wrap;
+    gap: 7px;
+    background-color: #fff;
+    padding: 7px;
+}
+
+@media screen and (max-width: 500px) {
+    .ujjwaltab .nav-link {
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .mobile_container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .navbar-brand {
+        display: block !important;
+        width: 50%;
+    }
+
+    .h-logo {
+        display: none;
+    }
+
+    .exp_now_btnphone {
+        width: fit-content;
+    }
+
+
+    .exp_now_btn {
+        text-decoration: none;
+        background-color: #9366D7;
+        color: #fff;
+        padding: 7px 9px;
+        border-radius: 30px;
+        font-size: 13px;
+    }
+
+
+}
+
+@media screen and (max-width: 766px) {
+
+    #hero {
+        padding: 3rem 0;
+        background-position: center;
+        background-size: inherit;
+        min-height: inherit;
+    }
+
+
+    #hero .hero_text {
+        color: #fff;
+        line-height: inherit;
+        font-size: 21px;
+    }
+
+    .ExploreWithUsCardGrid {
+        grid-template-columns: auto auto auto;
+        grid-gap: 1rem;
+    }
+
+    .ExploreWithUsCardGrid .ExploreWithUsCard .innerText {
+        font-size: 11px;
+    }
+
+    #StudentZone ul {
+        padding: 0;
+    }
+
+    #Other_Services1,
+    #Other_Services2,
+    #Other_Services3,
+   
+    #Therapy1,
+    #Therapy2,
+    #Therapy3 {
+        background-repeat: repeat;
+        background-position: inherit;
+    }
+
+
+    .fiveElement::before {
+        background: none;
+    }
+
+    .article_rightImg {
+        float: inherit;
+        width: 100%;
+    }
+
+    #Other_Services2 ul li{
+        background-size: 0;
+        padding-left: 0;
+    }
+    .fiveElement ul{
+        padding-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 821px) {
+  .onlyTabOrPhone{
+    display: block;
+    max-width: 100%;
+  }
+  #hero{
+    min-height: 52vh;
+  }
+    #service_sec1,
+    #service_sec2,
+    #service_sec3 {
+        background: #eababa;
+    }
+    #stress_management1,
+    #stress_management5,
+    #Grief_Management
+    {
+        background: #c3e2f7;
+    }
+    #stress_management2{
+        background: #ebecfc;
+    }
+    #stress_management4{
+        background: #ffb89f;
+    }
+    #Breakup_Management{
+        background: #ffebfb;
+    }
+    #stress_management3{
+        background: #dbeea6;
+    }
+    #Therapy1,
+    #Therapy2,
+    #Therapy3{
+        background: #abbbd5;
+    }
+    #Other_Services1{
+        background: #2d2872;
+    }
+    #Other_Services2{
+        background: #c98999;
+    }
+    #student_zone1{
+        background: #fff;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .ExploreWithUsCardGrid {
+        grid-template-columns: auto auto;
+    }
+
+    .animal_heading {
+        width: 100%;
+    }
+
+   
+    .article_rightImg2{
+        padding-right: 0;
+        width: 100%;
+    }
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    h3{
+        padding: 1rem 0;
+    }
+
+}
